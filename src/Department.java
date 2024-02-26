@@ -2,9 +2,9 @@
 public enum Department {
 
 	SALES,
-	DEVELOPMENT,
-	ACCOUNTING,
-	MANAGEMENT,
+	DEV,
+	ACCT,
+	MGMT,
 	HR,
 	
 	

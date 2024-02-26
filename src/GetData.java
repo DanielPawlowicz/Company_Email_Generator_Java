@@ -13,6 +13,13 @@ public class GetData {
 		String company = null;
 		Email email;
 		
+		// Asking for input
+		
+		// creating Email
+		if(depart != null)
+			email = new Email(name, surname, depart, company);
+		else
+			email = new Email(name, surname, company);
 	}
 	
 }

@@ -5,6 +5,8 @@ public class Email {
 	String surname;
 	Department department;
 	String company;
+	String password;
+	String alternateEmail;
 	
 	Email(String name, String surname, Department department, String company){
 		this.name = name;
@@ -22,6 +24,14 @@ public class Email {
 
 	private void generateEmail() {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	private void generatePassword() {
+		
+	}
+	
+	private void addAlternateEmail() {
 		
 	}
 	

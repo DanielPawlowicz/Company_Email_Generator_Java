@@ -22,6 +22,9 @@ public class GetData {
 			System.out.println("Enter the surname: ");
 			surname = scanner.nextLine();
 			
+			System.out.println("Enter the company name: ");
+			company = scanner.nextLine();
+			
 			System.out.println("Choose the number of the department: \n"
 					+ "0 - none \n"
 					+ "1 Sales \n"
@@ -32,6 +35,7 @@ public class GetData {
 			while(true) {
 				choosedDepart = scanner.nextInt();
 				if(choosedDepart == 0) {
+					depart = null;
 					break;
 				} else if (choosedDepart == 1) {
 					depart = "sls";
@@ -50,11 +54,7 @@ public class GetData {
 					break;
 				} else
 					System.out.println("Invalid value - try again");
-					
 			}
-			
-			
-			
 		
 		// creating Email
 		if(depart != null)

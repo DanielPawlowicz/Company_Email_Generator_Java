@@ -13,6 +13,7 @@ public class Email {
 		this.surname = surname;
 		this.department = department;
 		this.company = company;
+		displayData();
 	}
 	
 	Email(String name, String surname, String company){
@@ -20,6 +21,14 @@ public class Email {
 		this.surname = surname;
 		this.department = null;
 		this.company = company;
+		displayData();
+	}
+	
+	private void displayData() {
+		System.out.println(this.name);
+		System.out.println(this.surname);
+		System.out.println(this.department);
+		System.out.println(this.company);
 	}
 
 	private void generateEmail() {

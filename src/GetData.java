@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class GetData {
 
@@ -12,8 +12,14 @@ public class GetData {
 		Department depart = null;
 		String company = null;
 		Email email;
+		Scanner scanner;
 		
 		// Asking for input
+			scanner = new Scanner(System.in);
+			System.out.println("Enter the name: ");
+			name = scanner.nextLine();
+			
+		
 		
 		// creating Email
 		if(depart != null)

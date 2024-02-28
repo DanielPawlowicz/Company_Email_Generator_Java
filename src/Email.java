@@ -3,15 +3,15 @@ public class Email {
 
 	String name;
 	String surname;
-	Department department;
+	String department;
 	String company;
 	String password;
 	String alternateEmail;
 	
-	Email(String name, String surname, Department department, String company){
+	Email(String name, String surname, String depart, String company){
 		this.name = name;
 		this.surname = surname;
-		this.department = department;
+		this.department = depart;
 		this.company = company;
 		displayData();
 	}

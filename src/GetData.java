@@ -9,7 +9,8 @@ public class GetData {
 	public void askForData() {
 		String name = null;
 		String surname = null;
-		Department depart = null;
+		int choosedDepart = 0;
+		String depart = null;
 		String company = null;
 		Email email;
 		Scanner scanner;
@@ -20,7 +21,11 @@ public class GetData {
 			name = scanner.nextLine();
 			System.out.println("Enter the surname: ");
 			surname = scanner.nextLine();
-		
+			
+			
+			
+			
+			
 		
 		// creating Email
 		if(depart != null)

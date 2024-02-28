@@ -5,6 +5,7 @@ public class Email {
 	String surname;
 	String department;
 	String company;
+	String email;
 	String password;
 	String alternateEmail;
 	
@@ -13,7 +14,9 @@ public class Email {
 		this.surname = surname;
 		this.department = depart;
 		this.company = company;
-		displayData();
+//		displayData();
+		generateEmail();
+		System.out.println(email);
 	}
 	
 	Email(String name, String surname, String company){
@@ -21,7 +24,9 @@ public class Email {
 		this.surname = surname;
 		this.department = null;
 		this.company = company;
-		displayData();
+//		displayData();
+		generateEmail();
+		System.out.println(email);
 	}
 	
 	private void displayData() {
@@ -32,8 +37,10 @@ public class Email {
 	}
 
 	private void generateEmail() {
-		// TODO Auto-generated method stub
-		
+		if(this.department != null)
+			email = this.name + "." + this.surname + "@" + this.department + "." + this.company + ".com";
+		else
+			email = this.name + "." + this.surname + "@" + this.company + ".com";
 	}
 	
 	private void generatePassword() {

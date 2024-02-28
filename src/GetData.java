@@ -22,7 +22,36 @@ public class GetData {
 			System.out.println("Enter the surname: ");
 			surname = scanner.nextLine();
 			
-			
+			System.out.println("Choose the number of the department: \n"
+					+ "0 - none \n"
+					+ "1 Sales \n"
+					+ "2 Development \n"
+					+ "3 Accounting \n"
+					+ "4 Management \n"
+					+ "5 Human Resources");
+			while(true) {
+				choosedDepart = scanner.nextInt();
+				if(choosedDepart == 0) {
+					break;
+				} else if (choosedDepart == 1) {
+					depart = "sls";
+					break;
+				} else if (choosedDepart == 2) {
+					depart = "dev";
+					break;
+				} else if (choosedDepart == 3) {
+					depart = "acct";
+					break;
+				} else if (choosedDepart == 4) {
+					depart = "mgmt";
+					break;
+				} else if (choosedDepart == 5) {
+					depart = "hr";
+					break;
+				} else
+					System.out.println("Invalid value - try again");
+					
+			}
 			
 			
 			

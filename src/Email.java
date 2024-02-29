@@ -36,9 +36,9 @@ public class Email {
 
 	private void generateEmail() {
 		if(this.department != null)
-			email = this.name + "." + this.surname + "@" + this.department + "." + this.company + ".com";
+			email = (this.name + "." + this.surname + "@" + this.department + "." + this.company + ".com").toLowerCase();
 		else
-			email = this.name + "." + this.surname + "@" + this.company + ".com";
+			email = (this.name + "." + this.surname + "@" + this.company + ".com").toLowerCase();
 	}
 	
 	private String getEmail() {

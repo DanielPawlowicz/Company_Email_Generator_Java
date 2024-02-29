@@ -24,10 +24,10 @@ public class Email {
 		this.name = name;
 		this.surname = surname;
 		this.company = company;
-		generateEmail();
+		this.generateEmail();
 		this.showEmail();
 		this.generatePassword();
-//		System.out.println(this.getPassword());
+		this.showPassword();
 	}
 	
 	private void displayData() {
@@ -64,6 +64,10 @@ public class Email {
 	
 	private String getPassword() {
 		return this.password;
+	}
+	
+	private void showPassword() {
+		System.out.println(this.password);
 	}
 	
 	private void addAlternateEmail() {

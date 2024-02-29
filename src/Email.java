@@ -16,7 +16,8 @@ public class Email {
 		this.company = company;
 //		displayData();
 		generateEmail();
-		System.out.println(email);
+//		System.out.println(email);
+		this.showEmail();
 	}
 	
 	Email(String name, String surname, String company){
@@ -26,7 +27,8 @@ public class Email {
 		this.company = company;
 //		displayData();
 		generateEmail();
-		System.out.println(email);
+//		System.out.println(email);
+		this.showEmail();
 	}
 	
 	private void displayData() {
@@ -41,6 +43,14 @@ public class Email {
 			email = this.name + "." + this.surname + "@" + this.department + "." + this.company + ".com";
 		else
 			email = this.name + "." + this.surname + "@" + this.company + ".com";
+	}
+	
+	private String getEmail() {
+		return email;
+	}
+	
+	private void showEmail() {
+		System.out.println(email);
 	}
 	
 	private void generatePassword() {

@@ -8,6 +8,7 @@ public class Email {
 	String email;
 	String password;
 	String alternateEmail;
+	int PASS_LENGTH = 8;
 	
 	Email(String name, String surname, String depart, String company){
 		this.department = depart;
@@ -25,6 +26,8 @@ public class Email {
 		this.company = company;
 		generateEmail();
 		this.showEmail();
+		this.generatePassword();
+//		System.out.println(this.getPassword());
 	}
 	
 	private void displayData() {
@@ -50,7 +53,17 @@ public class Email {
 	}
 	
 	private void generatePassword() {
-		
+		String passwordSet = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%&";
+		String passw = "";
+		for(int i = 0; i < PASS_LENGTH; i++) {
+			int rand = (int) (Math.random() * passwordSet.length());
+			passw += passwordSet.charAt(rand);
+			this.password = passw;
+		}
+	}
+	
+	private String getPassword() {
+		return this.password;
 	}
 	
 	private void addAlternateEmail() {

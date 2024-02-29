@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Email {
 
@@ -7,7 +8,7 @@ public class Email {
 	String company;
 	String email;
 	String password;
-	String alternateEmail;
+	String alternativeEmail;
 	int PASS_LENGTH = 8;
 	
 	Email(String name, String surname, String depart, String company){
@@ -24,6 +25,7 @@ public class Email {
 		this.name = name;
 		this.surname = surname;
 		this.company = company;
+		this.assignAlternativeEmail();
 		this.generateEmail();
 		this.showEmail();
 		this.generatePassword();
@@ -70,8 +72,17 @@ public class Email {
 		System.out.println(this.password);
 	}
 	
-	private void addAlternateEmail() {
-		
+	private void assignAlternativeEmail() {
+		Scanner scanner = new Scanner(System.in);
+		while(true) {			
+			System.out.println("Enter alternate email: ");
+			this.alternativeEmail = scanner.nextLine();
+			if(alternativeEmail.contains("@"))
+				break;
+			else
+				System.out.println("Enter valid email address. Try again");
+		}
+		System.out.println("Alternative email address assigned succesfully");
 	}
 	
 }

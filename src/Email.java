@@ -10,24 +10,20 @@ public class Email {
 	String alternateEmail;
 	
 	Email(String name, String surname, String depart, String company){
-		this.name = name;
-		this.surname = surname;
 		this.department = depart;
-		this.company = company;
-//		displayData();
-		generateEmail();
-//		System.out.println(email);
-		this.showEmail();
+		restOfConstructor(name, surname, company);
 	}
 	
 	Email(String name, String surname, String company){
+		this.department = null;
+		restOfConstructor(name, surname, company);
+	}
+	
+	private void restOfConstructor(String name, String surname, String company) {
 		this.name = name;
 		this.surname = surname;
-		this.department = null;
 		this.company = company;
-//		displayData();
 		generateEmail();
-//		System.out.println(email);
 		this.showEmail();
 	}
 	

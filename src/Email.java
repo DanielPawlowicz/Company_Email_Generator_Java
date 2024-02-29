@@ -40,11 +40,11 @@ public class Email {
 //		System.out.println(this.department);
 //		System.out.println(this.company);
 		
-		System.out.println("______________________________");
-		System.out.println("Email: "+this.email);
-		System.out.println("Password: "+this.password);
-		System.out.println("Alternative email: "+this.alternativeEmail);
-		System.out.println("-------------------------------");
+		System.out.println("_______________________________________________________");
+		System.out.println("            Email:  "+this.email);
+		System.out.println("         Password:  "+this.password);
+		System.out.println("Alternative email:  "+this.alternativeEmail);
+		System.out.println("-------------------------------------------------------");
 	}
 
 	private void generateEmail() {

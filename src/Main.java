@@ -8,8 +8,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		GetData get = new GetData();
-		get.askForData();
+		new GetData().askForData();
+//		get.askForData();
 		
 		
 	}
